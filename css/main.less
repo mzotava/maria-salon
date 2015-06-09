@@ -12,8 +12,9 @@ Author URL: http://shapebootstrap.net
 *******Typography******
 **************************/
 
-@major_color: #3136d6;
+@major_color: #d68da4;
 @text_color: #64686d;
+@dark_color: rgba(36, 38, 50, 1);
 
 body {
   padding-top: 100px;
@@ -207,7 +208,7 @@ ul.nostyle {
 @media only screen and (min-width : 768px) {
   #main-menu {
     &.navbar-default {
-      background: rgba(255, 255, 255, 0.9);
+      background: @dark_color;
       -webkit-box-shadow: 0 0 3px 0 rgba(0,0,0,.1);
       box-shadow: 0 0 3px 0 rgba(0,0,0,.1);
 
@@ -222,6 +223,7 @@ ul.nostyle {
           &.active>a,
           &.open>a,
           &:hover>a {
+            color: @major_color;
             background: transparent;
             padding-top: 37px;
             border-top: 3px solid @major_color;
@@ -247,7 +249,7 @@ ul.nostyle {
           >a{
             border-top: 1px solid #404455;
             padding: 15px 0;
-            color: #eeeeee; 
+            color: #eeeeee;
           }
           &:first-child>a {
             border-top: 0;
@@ -286,7 +288,7 @@ ul.nostyle {
     left: 0;
     width: 100%;
     height: 100%;
-    color: #fff;
+    color: @dark_color;
 
     //Styling
     h2 {
@@ -294,7 +296,7 @@ ul.nostyle {
       font-size: 36px;
       line-height: 1;
       text-transform: uppercase;
-      color: #fff;
+      color: @dark_color;
       >span {
         color: @major_color;
       }
