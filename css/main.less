@@ -193,6 +193,8 @@ ul.nostyle {
     border: 0;
     border-radius: 0;
     margin-bottom: 0;
+    background-color: @dark_color;
+    color: @major_color;
 
     .navbar-toggle {
       margin-top: 32px;
@@ -203,6 +205,19 @@ ul.nostyle {
       padding: 22px 15px 21px;
     }
   }
+}
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:active,
+.navbar-default .navbar-nav>li>a:focus{
+  color: @major_color;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus{
+  color: @major_color;
+  background-color: @dark_color;
+
 }
 
 @media only screen and (min-width : 768px) {
@@ -218,6 +233,7 @@ ul.nostyle {
           >a {
             padding-top: 40px;
             padding-bottom: 40px;
+
           }
 
           &.active>a,
@@ -230,6 +246,7 @@ ul.nostyle {
           }
         }
       }
+
       //Dropdown
       .dropdown-menu {
         padding: 0 20px;
@@ -1062,18 +1079,18 @@ ul.nostyle {
 #contact {
   position: relative;
   overflow: hidden;
-  .container-wrapper {
+  .container {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: 30%;
+    margin-left: 10%;
     height: 100%;
-    background: fade(@major_color, 30%);
     z-index: 1;
   }
 
   .contact-form {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(214, 141, 164, 0.32);
     padding: 20px;
     margin-top: 50px;
     h3 {
